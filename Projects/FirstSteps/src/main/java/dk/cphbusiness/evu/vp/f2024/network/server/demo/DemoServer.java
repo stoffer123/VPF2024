@@ -20,9 +20,9 @@ public class DemoServer implements TextIOSocketListener
 		DemoServer listener = new DemoServer();
 		TextIOServer server = new TextIOServer(2323, listener);
 		Thread serverThread = new Thread(server);
-		System.out.println("Starting server thread!");
 		serverThread.start();
-		System.out.println("Server thread running!");
+		/*
+
 		for(int i = 1; i < 10; ++i)
 		{
 			Thread.sleep(1000);
@@ -31,5 +31,7 @@ public class DemoServer implements TextIOSocketListener
 		System.out.println("Stopping server...");
 		server.stop();
 		System.out.println("GoodBye!");
+
+		 */
 	}
 }

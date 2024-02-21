@@ -54,6 +54,6 @@ public class TextIOClient
 	{
 		TextIO io = new SystemTextIOImpl();
 		TextIOClient client = new TextIOClient(io);
-		client.connectTo("localhost", 2323);
+		client.connectTo("172.29.160.1", 2323);
 	}
 }
