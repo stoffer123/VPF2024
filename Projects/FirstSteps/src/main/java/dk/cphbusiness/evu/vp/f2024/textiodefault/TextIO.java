@@ -1,10 +1,14 @@
-package dk.cphbusiness.evu.vp.f2024.textio2;
+package dk.cphbusiness.evu.vp.f2024.textiodefault;
 
 import java.util.List;
 
-public abstract class AbstractTextIO implements TextIO
+public interface TextIO
 {
-	public int getInt()
+	void put(String str);
+	void clear();
+	String get();
+
+	default int getInt()
 	{
 		while(true)
 		{
@@ -20,7 +24,7 @@ public abstract class AbstractTextIO implements TextIO
 		}
 	}
 
-	public int getInt(int min, int max)
+	default int getInt(int min, int max)
 	{
 		if(min > max)
 		{
@@ -37,7 +41,7 @@ public abstract class AbstractTextIO implements TextIO
 		}
 	}
 
-	public int choose(String title, List<String> options, String question)
+	default int choose(String title, List<String> options, String question)
 	{
 		put(title);
 		put(System.lineSeparator());
@@ -53,7 +57,7 @@ public abstract class AbstractTextIO implements TextIO
 		return choice - 1;
 	}
 
-	public int choose(String title, String[] options, String question)
+	default int choose(String title, String[] options, String question)
 	{
 		put(title);
 		put(System.lineSeparator());

@@ -1,8 +1,8 @@
-package dk.cphbusiness.evu.vp.f2024.textio2;
+package dk.cphbusiness.evu.vp.f2024.textiodefault;
 
 import java.util.Scanner;
 
-public class SystemTextIOImpl extends AbstractTextIO
+public class SystemTextIOImpl implements TextIO
 {
 	private static Scanner scanner = new Scanner(System.in);
 
