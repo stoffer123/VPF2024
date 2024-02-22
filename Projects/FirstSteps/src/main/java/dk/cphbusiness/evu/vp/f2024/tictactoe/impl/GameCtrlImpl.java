@@ -9,6 +9,6 @@ public class GameCtrlImpl implements GameCtrl
     @Override
     public void runGame(Board board, Player player1, Player player2)
     {
-
+        board.printBoard();
     }
 }
