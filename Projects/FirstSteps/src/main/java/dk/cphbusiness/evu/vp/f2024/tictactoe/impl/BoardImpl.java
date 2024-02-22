@@ -20,7 +20,6 @@ public class BoardImpl implements Board
             for(int x = 0; x < 3; x++)
             {
                 board[y][x] = Character.forDigit(num++, 10);
-                System.out.println(num);
 
 
             }
