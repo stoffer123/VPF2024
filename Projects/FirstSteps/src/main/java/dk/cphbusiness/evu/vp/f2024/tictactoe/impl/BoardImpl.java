@@ -1,11 +1,14 @@
 package dk.cphbusiness.evu.vp.f2024.tictactoe.impl;
 
+import dk.cphbusiness.evu.vp.f2024.textio.SystemTextIOImpl;
+import dk.cphbusiness.evu.vp.f2024.textio.TextIO;
 import dk.cphbusiness.evu.vp.f2024.tictactoe.Board;
 import dk.cphbusiness.evu.vp.f2024.tictactoe.Player;
 
 public class BoardImpl implements Board
 {
     private static char[][] board = new char[3][3];
+    private static final TextIO io = new SystemTextIOImpl();
 
     public BoardImpl()
     {
@@ -64,6 +67,20 @@ public class BoardImpl implements Board
     @Override
     public void makeMove(Player player)
     {
+        io.put(player.getName() + " Please make your move");
+        int input = io.getInt(1, 9);
 
+        for(int y = 0; y < 3; y++)
+        {
+            for(int x = 0; x < 3; x++)
+            {
+                if(Character.forDigit(input, 10) == board[y][x])
+                {
+                    board[y][x] = player.getSymbol();
+                    io.clear();
+                    break;
+                }
+            }
+        }
     }
 }
