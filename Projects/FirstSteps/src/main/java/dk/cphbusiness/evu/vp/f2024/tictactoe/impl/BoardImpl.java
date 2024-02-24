@@ -30,7 +30,7 @@ public class BoardImpl implements Board
     }
 
     @Override
-    public void checkWinner(Player player)
+    public boolean checkWinner(Player player)
     {
         if(
                 //Check horizontal
@@ -49,7 +49,10 @@ public class BoardImpl implements Board
         {
             //Winner was found
             System.out.println(player.getName() + "Has won!");
+            return true;
+
         }
+        else{return false;}
     }
 
     @Override
@@ -67,7 +70,7 @@ public class BoardImpl implements Board
     @Override
     public void makeMove(Player player)
     {
-        io.put(player.getName() + " Please make your move");
+        io.put(player.getName() + " Please make your move: ");
         int input = io.getInt(1, 9);
 
         for(int y = 0; y < 3; y++)
