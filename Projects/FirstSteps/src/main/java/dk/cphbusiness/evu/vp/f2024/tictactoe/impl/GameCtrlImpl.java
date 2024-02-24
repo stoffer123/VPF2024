@@ -10,10 +10,24 @@ public class GameCtrlImpl implements GameCtrl
     public void runGame(Board board, Player player1, Player player2)
 
     {
-        board.printBoard();
-        board.makeMove(player1);
-        board.printBoard();
-        board.makeMove(player2);
-        board.printBoard();
+        while(true)
+        {
+            board.printBoard();
+            board.makeMove(player1);
+            if(winnerWasFound(board, player1, player2)){ break;}
+            board.printBoard();
+            board.makeMove(player2);
+            if(winnerWasFound(board, player1, player2)){ break;}
+
+
+        }
+    }
+    private boolean winnerWasFound(Board board, Player player1, Player player2)
+    {
+        if(board.checkWinner(player1) || board.checkWinner(player2))
+        {
+            return true;
+        }
+        return false;
     }
 }
