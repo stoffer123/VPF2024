@@ -24,7 +24,7 @@ public class GameCtrlImpl implements GameCtrl
     }
     private boolean winnerWasFound(Board board, Player player1, Player player2)
     {
-        if(board.checkWinner(player1) || board.checkWinner(player2))
+        if(board.checkWinner(player1) || board.checkWinner(player2) || board.checkDraw(player1, player2))
         {
             return true;
         }

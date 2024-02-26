@@ -1,4 +1,4 @@
-package dk.cphbusiness.evu.vp.f2024;
+package dk.cphbusiness.evu.vp.f2024.lamps;
 
 import dk.cphbusiness.evu.vp.f2024.lamps.*;
 

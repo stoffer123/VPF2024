@@ -6,6 +6,7 @@ public interface Board
     boolean checkWinner(Player player);
     void printBoard();
     void makeMove(Player player);
+    boolean checkDraw(Player player1, Player player2);
 
 
 }

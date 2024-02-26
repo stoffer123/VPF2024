@@ -86,4 +86,20 @@ public class BoardImpl implements Board
             }
         }
     }
+
+    public boolean checkDraw(Player player1, Player player2)
+    {
+        for(int y = 0; y < 3; y++)
+        {
+            for(int x = 0; y < 3; x++)
+            {
+                if(board[y][x] != player1.getSymbol() || board[y][x] != player2.getSymbol())
+                {
+                    return false;
+                }
+            }
+        }
+        System.out.println("Its a draw!");
+        return true;
+    }
 }
