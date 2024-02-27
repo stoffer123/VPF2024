@@ -4,8 +4,8 @@ import java.util.List;
 
 public interface Player
 {
-    void chooseHand(List<String> options);
-    void setName();
+    String chooseHand(List<String> options);
+    void setName(String newName);
     String getName();
 
 }
