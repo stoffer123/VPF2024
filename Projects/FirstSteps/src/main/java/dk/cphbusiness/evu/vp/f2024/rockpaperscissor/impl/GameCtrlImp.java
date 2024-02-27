@@ -7,10 +7,10 @@ import java.util.List;
 
 public class GameCtrlImp implements GameCtrl
 {
-    private static List<String> options = List.of("Rock", "Paper", "Scissor");
+
     @Override
     public void runGame(Player player1, Player player2, List<String> options)
     {
-
+        player1.chooseHand(options);
     }
 }
