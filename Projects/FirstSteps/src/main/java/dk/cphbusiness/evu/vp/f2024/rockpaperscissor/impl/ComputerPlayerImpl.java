@@ -18,17 +18,17 @@ public class ComputerPlayerImpl implements Player
         this.name = name;
     }
     @Override
-    public void chooseHand(List<String> options)
+    public String chooseHand(List<String> options)
     {
         String choice = options.get(rand.nextInt(3));
-        System.out.println(choice);
+        return choice;
 
     }
 
     @Override
-    public void setName()
+    public void setName(String newName)
     {
-
+        this.name = newName;
     }
 
     @Override
