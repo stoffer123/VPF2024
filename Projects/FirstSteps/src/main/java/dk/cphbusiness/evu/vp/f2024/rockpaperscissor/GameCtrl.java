@@ -7,5 +7,4 @@ public interface GameCtrl
     void runGame(Player player1, Player player2, List<String> options);
 
 
-
 }
