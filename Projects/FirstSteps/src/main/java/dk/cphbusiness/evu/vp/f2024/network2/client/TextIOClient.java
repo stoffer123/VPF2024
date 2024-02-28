@@ -1,4 +1,4 @@
-package dk.cphbusiness.evu.vp.f2024.network.client;
+package dk.cphbusiness.evu.vp.f2024.network2.client;
 
 import dk.cphbusiness.evu.vp.f2024.textiodefault.SystemTextIOImpl;
 import dk.cphbusiness.evu.vp.f2024.textiodefault.TextIO;

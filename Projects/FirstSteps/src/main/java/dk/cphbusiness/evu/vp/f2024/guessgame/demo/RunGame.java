@@ -12,7 +12,8 @@ public class RunGame
 	public static void main(String[] args)
 	{
 		String[] options = {"Human", "Computer"};
-		TextIO io = new SystemTextIOImpl();
+		TextIO io;
+		io = new SystemTextIOImpl();
 		Thinker thinker;
 		int thinkerChoice = io.choose("Who should play thinker: ", options, "Make your choice:");
 		if(thinkerChoice == 0)

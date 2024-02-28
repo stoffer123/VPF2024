@@ -1,8 +1,8 @@
-package dk.cphbusiness.evu.vp.f2024.network.server.demo;
+package dk.cphbusiness.evu.vp.f2024.network2.server.demo;
 
-import dk.cphbusiness.evu.vp.f2024.network.server.SocketTextIO;
-import dk.cphbusiness.evu.vp.f2024.network.server.TextIOServer;
-import dk.cphbusiness.evu.vp.f2024.network.server.TextIOSocketListener;
+import dk.cphbusiness.evu.vp.f2024.network2.server.SocketTextIO;
+import dk.cphbusiness.evu.vp.f2024.network2.server.TextIOServer;
+import dk.cphbusiness.evu.vp.f2024.network2.server.TextIOSocketListener;
 
 import java.io.IOException;
 

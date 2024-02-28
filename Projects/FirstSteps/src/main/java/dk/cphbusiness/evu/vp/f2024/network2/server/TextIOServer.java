@@ -1,7 +1,6 @@
-package dk.cphbusiness.evu.vp.f2024.network.server;
+package dk.cphbusiness.evu.vp.f2024.network2.server;
 
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
@@ -28,7 +27,7 @@ public class TextIOServer implements Runnable
 		{
 			this.serverSocket = new ServerSocket(port);
 			running = true;
-			System.out.println("Server starting on " + (InetAddress.getLocalHost()) + ":" + port);
+			System.out.println("Server starting on " + serverSocket.getInetAddress() + ":" + port);
 			while(running)
 			{
 				try

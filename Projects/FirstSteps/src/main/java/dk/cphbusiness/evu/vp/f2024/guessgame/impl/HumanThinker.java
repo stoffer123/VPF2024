@@ -2,6 +2,7 @@ package dk.cphbusiness.evu.vp.f2024.guessgame.impl;
 
 import dk.cphbusiness.evu.vp.f2024.guessgame.GuessEvaluation;
 import dk.cphbusiness.evu.vp.f2024.guessgame.Thinker;
+import dk.cphbusiness.evu.vp.f2024.textio.SystemTextIOImpl;
 import dk.cphbusiness.evu.vp.f2024.textio.TextIO;
 
 public class HumanThinker implements Thinker
