@@ -47,7 +47,7 @@ public class ClientClientThread implements Runnable
 
 	public static void main(String[] args) throws IOException
 	{
-		String ip = "localhost";
+		String ip = "10.55.138.109";
 		int port = 2323;
 		TextIO io = new SystemTextIOImpl();
 		Socket socket = new Socket(ip, port);
