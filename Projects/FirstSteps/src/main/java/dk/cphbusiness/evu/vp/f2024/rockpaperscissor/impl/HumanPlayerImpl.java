@@ -10,12 +10,13 @@ public class HumanPlayerImpl implements Player
 {
     private int score;
     private String name;
-    private static final TextIO io = new SystemTextIOImpl();
+    private TextIO io;
 
-    public HumanPlayerImpl(String name)
+    public HumanPlayerImpl(String name, TextIO io)
     {
         this.name = name;
         this.score = 0;
+        this.io = io;
     }
 
 
