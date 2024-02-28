@@ -27,7 +27,7 @@ public class RpsDemo
             case 0 ->
             {
                 System.out.println("What is the name of player1: ");
-                player1 = new HumanPlayerImpl(io.get());
+                player1 = new HumanPlayerImpl(io.get(), io);
             }
 
             case 1 ->
@@ -47,7 +47,7 @@ public class RpsDemo
             case 0 ->
             {
                 System.out.println("What is the name of player2: ");
-                player2 = new HumanPlayerImpl(io.get());
+                player2 = new HumanPlayerImpl(io.get(), io);
             }
 
             case 1 ->
