@@ -2,6 +2,7 @@ package dk.cphbusiness.evu.vp.f2024.network.chatserver;
 
 import java.io.*;
 import java.net.Socket;
+import java.net.SocketException;
 
 public class ServerClientThread implements Runnable
 {
@@ -36,6 +37,10 @@ public class ServerClientThread implements Runnable
 				listener.handleText(name + ": " + text);
 			}
 			socket.close();
+		}
+		catch (SocketException se)
+		{
+			listener.handleText("SocketException from " + name + ".");
 		}
 		catch (IOException e)
 		{
