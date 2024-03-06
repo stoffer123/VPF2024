@@ -6,4 +6,6 @@ public interface Render
 	void background(int color);
 	void fill(int color);
 	void circle(int x, int y, int radius);
+	int getXSize();
+	int getYSize();
 }
