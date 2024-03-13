@@ -1,6 +1,6 @@
-package dk.cphbusiness.dk.simulation.masses;
+package dk.cphbusiness.simulation.masses;
 
-import dk.cphbusiness.dk.simulation.draw.Render;
+import dk.cphbusiness.simulation.draw.Render;
 
 import java.util.ArrayList;
 import java.util.List;

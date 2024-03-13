@@ -1,4 +1,4 @@
-package dk.cphbusiness.dk.simulation.math;
+package dk.cphbusiness.simulation.math;
 
 public class VMMath
 {

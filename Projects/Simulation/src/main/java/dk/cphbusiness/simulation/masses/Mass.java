@@ -1,7 +1,7 @@
-package dk.cphbusiness.dk.simulation.masses;
+package dk.cphbusiness.simulation.masses;
 
-import dk.cphbusiness.dk.simulation.math.VMMath;
-import dk.cphbusiness.dk.simulation.math.Vec2;
+import dk.cphbusiness.simulation.math.VMMath;
+import dk.cphbusiness.simulation.math.Vec2;
 
 public class Mass
 {
@@ -52,6 +52,7 @@ public class Mass
 		this.force = VMMath.add(this.force, force);
 	}
 
+
 	public void update(double dt)
 	{
 		Vec2 acceleration = VMMath.div(force, mass);
@@ -60,5 +61,14 @@ public class Mass
 		position = VMMath.add(lastPosition, VMMath.mul(velocity, 0.5 * dt));
 		force = new Vec2(0, 0);
 	}
+
+	/*
+	public void update(double dt)
+	{
+		Vec2 acceleration = VMMath.div(force, mass);
+		velocity = VMMath.add(velocity, VMMath.mul(acceleration, dt));
+		position = VMMath.add(position, VMMath.mul(velocity, dt));
+		force = new Vec2(0, 0);
+	}*/
 
 }
