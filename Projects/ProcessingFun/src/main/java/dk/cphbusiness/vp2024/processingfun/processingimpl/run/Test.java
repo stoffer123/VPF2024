@@ -13,7 +13,7 @@ public class Test extends PApplet
 
 	public static void main(String args[])
 	{
-		PApplet.main("dk.cphbusiness.vp2024.processingfun.run.Test");
+		PApplet.main("dk.cphbusiness.vp2024.processingfun.processingimpl.run.Test");
 	}
 
 	public Test()

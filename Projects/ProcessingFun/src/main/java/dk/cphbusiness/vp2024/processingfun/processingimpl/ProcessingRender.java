@@ -35,4 +35,16 @@ public class ProcessingRender implements Render
 	{
 		pApp.circle(x, y, radius);
 	}
+
+	@Override
+	public int getXSize()
+	{
+		return pApp.width;
+	}
+
+	@Override
+	public int getYSize()
+	{
+		return pApp.height;
+	}
 }
