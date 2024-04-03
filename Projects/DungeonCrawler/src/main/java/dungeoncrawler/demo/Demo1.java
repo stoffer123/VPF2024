@@ -2,11 +2,9 @@ package dungeoncrawler.demo;
 
 import dungeoncrawler.*;
 import dungeoncrawler.impl.*;
-import dungeoncrawler.impl.actions.RandomEntityCtrl;
+import dungeoncrawler.impl.RandomEntityCtrl;
 import textio.SystemTextIOImpl;
 import textio.TextIO;
-
-import java.util.List;
 
 public class Demo1
 {

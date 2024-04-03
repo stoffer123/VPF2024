@@ -1,4 +1,4 @@
-package dungeoncrawler.impl.actions;
+package dungeoncrawler.impl;
 
 import dungeoncrawler.Action;
 import dungeoncrawler.Entity;
